@@ -1,0 +1,19 @@
+{
+  "name": "dthrong",
+  "description": "Start as much processes of your application as you need",
+  "version": "1.0.0",
+  "homepage": "http://github.com/dnode/dthrong",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "main": "src/lib.js",
+  "bin": {
+    "dthrong": "src/lib-cli.js"
+  },
+  "dependencies": {
+    "throng": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dnode/dthrong.git"
+  }
+}
