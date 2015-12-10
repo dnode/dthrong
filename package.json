@@ -1,13 +1,12 @@
 {
   "name": "dthrong",
-  "description": "Start as much processes of your application as you need",
-  "version": "1.0.0",
+  "description": "Start processes depending on the environment variable 'WEB_CONCURRENCY' or the available processors",
+  "version": "2.0.0",
   "homepage": "http://github.com/dnode/dthrong",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "main": "src/lib.js",
   "bin": {
-    "dthrong": "src/lib-cli.js"
+    "dthrong": "src/cli.js"
   },
   "dependencies": {
     "throng": "^1.0.1"

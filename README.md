@@ -2,7 +2,7 @@
 [![devDependency Status](https://david-dm.org/dnode/dthrong/dev-status.svg)](https://david-dm.org/dnode/dthrong#info=devDependencies)
 
 # dthrong
-Start as much processes of your application as you need
+Start processes depending on the environment variable ```WEB_CONCURRENCY``` or the available processors
 
 ## Install
 ```
@@ -10,11 +10,11 @@ npm i dthrong --save
 ```
 
 ## Example
-- Start as much processes of your application as processors are available
-```
-dthrong src/app.js
-```
-- Start as much processes of your application as the value of a given environment variable (e.g. WEB_CONCURRENCY on Heroku)
-```
-dthrong src/app.js WEB_CONCURRENCY
+```json
+{
+  "main": "src/app.js",
+  "scripts": {
+    "start": "dthrong"
+  }
+}
 ```
