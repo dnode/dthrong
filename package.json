@@ -1,7 +1,7 @@
 {
   "name": "dthrong",
   "description": "Start processes depending on the environment variable 'WEB_CONCURRENCY' or the available processors",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "homepage": "http://github.com/dnode/dthrong",
   "license": "MIT",
   "readmeFilename": "README.md",
