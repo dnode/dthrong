@@ -1,8 +1,5 @@
 'use strict';
 
 module.exports = (path) => {
-  require('throng')(
-      () => { require(path); },
-      { workers: process.env.WEB_CONCURRENCY }
-  );
+  require('throng')(process.env.WEB_CONCURRENCY, () => { require(path); });
 };
